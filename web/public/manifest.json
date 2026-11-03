@@ -1,0 +1,9 @@
+{
+  "short_name": "USOF",
+  "name": "USOF Underflow Stack Overflow",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#1e293b",
+  "background_color": "#0f172a"
+}
+

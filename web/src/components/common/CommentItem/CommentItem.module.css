@@ -1,0 +1,221 @@
+.commentContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: 0.75rem;
+}
+
+.nestedReply {
+  margin-left: 1.5rem;
+  padding-left: 0.75rem;
+  border-left: 2px solid var(--color-border);
+}
+
+.commentCard {
+  background-color: var(--color-bg-secondary);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.solutionCard {
+  border: 2px solid var(--color-success);
+  background-color: rgba(16, 185, 129, 0.05);
+}
+
+.inactiveCard {
+  opacity: 0.7;
+  border-style: dashed;
+}
+
+.acceptedBanner {
+  background-color: var(--color-success-light);
+  color: var(--color-success);
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 0.3rem 0.6rem;
+  border-radius: var(--radius-sm);
+  display: inline-block;
+  align-self: flex-start;
+  margin-bottom: 0.25rem;
+}
+
+.commentBody {
+  display: flex;
+  gap: 1rem;
+}
+
+.voteBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+  min-width: 32px;
+}
+
+.voteBtn {
+  background: none;
+  border: none;
+  color: var(--color-text-muted);
+  font-size: 0.85rem;
+  padding: 0.2rem;
+  cursor: pointer;
+  border-radius: var(--radius-sm);
+  transition: all var(--transition-fast);
+}
+
+.voteBtn:hover {
+  color: var(--color-primary);
+  background-color: var(--color-primary-light);
+}
+
+.activeUp {
+  color: var(--color-primary) !important;
+  font-weight: 800;
+  background-color: var(--color-primary-light);
+}
+
+.activeDown {
+  color: var(--color-danger) !important;
+  font-weight: 800;
+  background-color: var(--color-danger-light);
+}
+
+.scorePositive {
+  color: var(--color-success);
+}
+
+.scoreNegative {
+  color: var(--color-danger);
+}
+
+.ratingScore {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+}
+
+.contentArea {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.authorHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.authorAvatar {
+  width: 22px;
+  height: 22px;
+  border-radius: var(--radius-full);
+}
+
+.authorName {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+}
+
+.date {
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+}
+
+.inactiveTag {
+  font-size: 0.7rem;
+  color: var(--color-danger);
+  background-color: var(--color-danger-light);
+  padding: 0.1rem 0.4rem;
+  border-radius: var(--radius-sm);
+}
+
+.commentText {
+  color: var(--color-text-primary);
+  font-size: 0.92rem;
+  line-height: 1.5;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.controlsRow {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+  margin-top: 0.25rem;
+}
+
+.actionBtn {
+  background: none;
+  border: none;
+  color: var(--color-text-muted);
+  font-size: 0.78rem;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0.2rem 0.4rem;
+  border-radius: var(--radius-sm);
+  transition: all var(--transition-fast);
+}
+
+.actionBtn:hover {
+  color: var(--color-primary);
+  background-color: var(--color-primary-light);
+}
+
+.solutionActiveBtn {
+  color: var(--color-success);
+}
+
+.deleteBtn:hover {
+  color: var(--color-danger);
+  background-color: var(--color-danger-light);
+}
+
+.replyForm {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+  padding: 0.75rem;
+  background-color: var(--color-bg-primary);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+}
+
+.replyTextarea {
+  background-color: var(--color-bg-secondary);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  color: var(--color-text-primary);
+  padding: 0.5rem;
+  font-size: 0.88rem;
+  resize: vertical;
+}
+
+.replySubmitBtn {
+  align-self: flex-end;
+  background-color: var(--color-primary);
+  color: #ffffff;
+  padding: 0.4rem 0.8rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.replySubmitBtn:hover:not(:disabled) {
+  background-color: var(--color-primary-hover);
+}
+
+.repliesBranch {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+

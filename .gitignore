@@ -1,0 +1,14 @@
+node_modules/
+.env
+.env.*
+!.env.example
+*.log
+tmp/
+build/
+web/build/
+.vscode/
+.idea/
+uploads/avatars/*
+!uploads/avatars/.gitkeep
+uploads/posts/*
+!uploads/posts/.gitkeep

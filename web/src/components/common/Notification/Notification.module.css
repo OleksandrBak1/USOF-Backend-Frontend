@@ -1,0 +1,90 @@
+.toast {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.9rem 1.25rem;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-lg);
+  backdrop-filter: blur(12px);
+  max-width: 420px;
+  animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.typeBadge {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.messageText {
+  font-size: 0.88rem;
+  color: var(--color-text-primary);
+  line-height: 1.4;
+}
+
+.closeBtn {
+  background: none;
+  border: none;
+  color: var(--color-text-muted);
+  font-size: 1.4rem;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0.2rem;
+}
+
+.closeBtn:hover {
+  color: var(--color-text-primary);
+}
+
+.success {
+  background-color: rgba(16, 185, 129, 0.92);
+  border: 1px solid var(--color-success);
+  color: #ffffff;
+}
+
+.success .typeBadge {
+  color: #d1fae5;
+}
+
+.error {
+  background-color: rgba(239, 68, 68, 0.92);
+  border: 1px solid var(--color-danger);
+  color: #ffffff;
+}
+
+.error .typeBadge {
+  color: #fee2e2;
+}
+
+.info {
+  background-color: rgba(59, 130, 246, 0.92);
+  border: 1px solid var(--color-primary);
+  color: #ffffff;
+}
+
+.info .typeBadge {
+  color: #dbeafe;
+}
+

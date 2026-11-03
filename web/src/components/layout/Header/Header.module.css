@@ -1,0 +1,285 @@
+.header {
+  min-height: var(--header-height);
+  background-color: rgba(7, 10, 18, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--color-border-subtle);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.45);
+}
+
+.container {
+  width: 100%;
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+  padding: 0.4rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem 1.5rem;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 1.45rem;
+  font-weight: 800;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  letter-spacing: -0.5px;
+  text-decoration: none;
+  transition: opacity var(--transition-fast);
+  flex-shrink: 0;
+}
+
+.logo:hover {
+  opacity: 0.9;
+}
+
+.logoPrefix,
+.logoSuffix {
+  color: #3b82f6;
+  font-family: var(--font-family-mono);
+  font-weight: 700;
+  text-shadow: 0 0 12px rgba(59, 130, 246, 0.45);
+}
+
+.searchForm {
+  flex: 1 1 260px;
+  max-width: 520px;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.searchInput {
+  flex: 1;
+  background-color: rgba(13, 19, 34, 0.85);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  color: var(--color-text-primary);
+  padding: 0.52rem 0.9rem;
+  font-size: 0.9rem;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.4);
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast), background-color var(--transition-fast);
+  min-width: 0;
+}
+
+.searchInput:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.25), inset 0 1px 3px rgba(0, 0, 0, 0.4);
+  background-color: #090e1a;
+}
+
+.searchButton {
+  background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+  color: #ffffff;
+  padding: 0.52rem 1.15rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.9rem;
+  font-weight: 600;
+  box-shadow: 0 2px 10px rgba(37, 99, 235, 0.35);
+  transition: all var(--transition-fast);
+  flex-shrink: 0;
+}
+
+.searchButton:hover {
+  background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
+  box-shadow: 0 4px 14px rgba(37, 99, 235, 0.5);
+  transform: translateY(-1px);
+}
+
+.userSection {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.profileWrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.roleBadge {
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 0.22rem 0.55rem;
+  border-radius: var(--radius-sm);
+  letter-spacing: 0.6px;
+  white-space: nowrap;
+}
+
+.adminBadge {
+  background-color: rgba(239, 68, 68, 0.15);
+  color: #f87171;
+  border: 1px solid rgba(239, 68, 68, 0.35);
+}
+
+.userBadge {
+  background-color: rgba(59, 130, 246, 0.15);
+  color: #60a5fa;
+  border: 1px solid rgba(59, 130, 246, 0.35);
+}
+
+.guestBadge {
+  background-color: rgba(100, 116, 139, 0.12);
+  color: #94a3b8;
+  border: 1px solid var(--color-border);
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 0.2rem 0.5rem;
+  border-radius: var(--radius-sm);
+  letter-spacing: 0.6px;
+  white-space: nowrap;
+}
+
+.userProfileLink {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  color: var(--color-text-primary);
+  font-weight: 600;
+  text-decoration: none;
+  transition: opacity var(--transition-fast);
+}
+
+.userProfileLink:hover {
+  opacity: 0.85;
+}
+
+.avatarImage {
+  width: 32px;
+  height: 32px;
+  border-radius: var(--radius-full);
+  object-fit: cover;
+  border: 1.5px solid var(--color-border);
+  flex-shrink: 0;
+}
+
+.userName {
+  font-size: 0.9rem;
+  max-width: 120px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.logoutButton {
+  background-color: transparent;
+  color: var(--color-text-secondary);
+  border: 1px solid var(--color-border);
+  padding: 0.35rem 0.75rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.82rem;
+  font-weight: 500;
+  transition: all var(--transition-fast);
+  white-space: nowrap;
+}
+
+.logoutButton:hover {
+  background-color: var(--color-danger-light);
+  color: var(--color-danger);
+  border-color: var(--color-danger);
+}
+
+.guestWrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+.defaultAvatar {
+  width: 32px;
+  height: 32px;
+  border-radius: var(--radius-full);
+  background-color: var(--color-bg-input);
+  border: 1px solid var(--color-border);
+  color: var(--color-text-muted);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.85rem;
+  flex-shrink: 0;
+}
+
+.loginBtn {
+  color: #e2e8f0;
+  font-size: 0.88rem;
+  font-weight: 600;
+  padding: 0.4rem 0.85rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.04);
+  text-decoration: none;
+  transition: all var(--transition-fast);
+  white-space: nowrap;
+}
+
+.loginBtn:hover {
+  background-color: rgba(255, 255, 255, 0.09);
+  border-color: rgba(59, 130, 246, 0.4);
+  color: #ffffff;
+}
+
+.registerBtn {
+  background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+  color: #ffffff;
+  font-size: 0.88rem;
+  font-weight: 600;
+  padding: 0.4rem 0.95rem;
+  border-radius: var(--radius-sm);
+  text-decoration: none;
+  box-shadow: 0 4px 14px rgba(37, 99, 235, 0.35);
+  transition: all var(--transition-fast);
+  white-space: nowrap;
+}
+
+.registerBtn:hover {
+  background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
+  color: #ffffff;
+  box-shadow: 0 6px 18px rgba(37, 99, 235, 0.5);
+  transform: translateY(-1px);
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 0.35rem 0;
+  }
+
+  .container {
+    padding: 0.35rem 1rem;
+    gap: 0.6rem;
+  }
+
+  .logo {
+    font-size: 1.3rem;
+  }
+
+  .searchForm {
+    order: 3;
+    width: 100%;
+    max-width: 100%;
+    flex: 1 1 100%;
+    margin-top: 0.15rem;
+  }
+
+  .searchInput {
+    padding: 0.45rem 0.75rem;
+    font-size: 0.85rem;
+  }
+
+  .searchButton {
+    padding: 0.45rem 0.9rem;
+    font-size: 0.85rem;
+  }
+
+  .userName {
+    max-width: 90px;
+  }
+}

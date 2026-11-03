@@ -1,0 +1,27 @@
+{
+  "name": "usof-backend-frontend",
+  "version": "1.0.0",
+  "description": "USOF Full Stack — сервіс запитань і відповідей для програмістів (Innovation Campus NTU KhPI). Повнофункціональний монорепозиторій: RESTful API на Express + MySQL та клієнтський додаток на React 18 + Redux Toolkit.",
+  "main": "API/src/server.js",
+  "scripts": {
+    "start": "node API/src/server.js",
+    "dev": "node --watch API/src/server.js",
+    "dev:api": "node --watch API/src/server.js",
+    "dev:web": "npm --prefix web start",
+    "install:all": "npm install && npm --prefix web install",
+    "db:init": "node API/src/scripts/initDatabase.js",
+    "db:seed": "node API/src/scripts/seedDatabase.js",
+    "db:reset": "node API/src/scripts/resetDatabase.js",
+    "db:clean": "node API/src/scripts/cleanDatabase.js",
+    "admin:create": "node API/src/scripts/createAdmin.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "express": "^5.2.1",
+    "multer": "^2.4.0",
+    "mysql2": "^3.24.4",
+    "nodemailer": "^10.0.10"
+  }
+}
